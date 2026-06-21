@@ -1,26 +1,21 @@
 @import url(src/nav.css);
 @import url(src/barra.css);
+@import url(src/conteudo_inicio.css);
 
-body{
+body {
+    background-image: linear-gradient(#00112b00, #00112b46), url('../assets/backgrond.png');
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center;
     background-color: #00112b;
+    min-height: 100vh;
 }
-/* Faz o efeito de scroll suave que conversamos */
+.filtro{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
 html {
     scroll-behavior: smooth;
 }
 
-.hero {
-    /* Usando '../../' para voltar duas pastas e corrigindo a extensão para .png */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../assets/background.png'); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
-    width: 100%;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}

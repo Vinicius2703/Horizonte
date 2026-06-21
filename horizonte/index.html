@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horizonte</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav>
             <a href="#Home"><img src="../../assets/Horizonte_branco.svg" alt="Logo Horizonte"></a>
-            
+
             <div class="nav_bar">
                 <div class="botoes_nav">
                     <a href="#inicio">Início</a>
                     <a href="#destinos">Destinos</a>
                     <a href="#pacotes">Pacotes</a>
                 </div>
-                
+
                 <div class="log_cad">
                     <a href="#login">Login</a>
                     <a href="#cadastro" class="cadastro">Cadastre-se</a>
@@ -25,46 +27,58 @@
             </div>
         </nav>
     </header>
+
     <main>
-        <section id="inicio" class="hero">
-            <div class="hero-conteudo"></div>
-
-            <div class="barra">
-                    <div class="item-barra">
-                        <details class="dropdown">
-                            <summary>DESTINO <img src="../../assets/seta-dropdown.svg" alt="seta" class="setinha"></summary>
-                            <div class="dropdown-conteudo">
-                                <p>Internacionais</p>
-                                <p>Nacionais</p>
-                            </div>
-                        </details>
-                        <p class="descricao">Para onde você quer ir?</p>
+    <section class="filtro">
+        <div class="barra"> 
+            
+            <div class="conteudo">
+                <details class="dropdown">
+                    <summary>DESTINO <img src="../../assets/seta-dropdown.svg" alt="seta" class="setinha"></summary>
+                    <div class="dropdown-conteudo">
+                        <p>NACIONAIS</p>
+                        <p>INTERNACIONAIS</p>
                     </div>
-
-                    <div class="item-barra">
-                        <details class="dropdown">
-                            <summary>DATA <img src="../../assets/seta-dropdown.svg" alt="seta" class="setinha"></summary>
-                            <div class="dropdown-conteudo">
-                                <input type="date">
-                            </div>
-                        </details>
-                        <p class="descricao">Quando você quer ir?</p>
-                    </div>
-
-                    <div class="item-barra">
-                        <details class="dropdown">
-                            <summary>PESSOAS <img src="../../assets/seta-dropdown.svg" alt="seta" class="setinha"></summary>
-                            <div class="dropdown-conteudo">
-                                <p>1 Pessoa</p>
-                                <p>2 Pessoas</p>
-                                <p>3+ Pessoas</p>
-                            </div>
-                        </details>
-                        <p class="descricao">Para onde você quer ir?</p>
-                    </div>
-
+                </details>
+                <p class="descricao">Para onde quer ir?</p>
             </div>
-        </section>
+
+            <div class="conteudo">
+                <details class="dropdown">
+                    <summary>DATA <img src="../../assets/seta-dropdown.svg" alt="seta" class="setinha"></summary>
+                    <div class="dropdown-conteudo">
+                        <input type="date">
+                        <button type="submit" class="botao">Enviar</button>
+                    </div>
+                </details>
+                <p class="descricao">Quando quer ir?</p>
+            </div>
+
+            <div class="conteudo">
+                <details class="dropdown">
+                    <summary>PESSOAS <img src="../../assets/seta-dropdown.svg" alt="seta" class="setinha"></summary>
+                    <div class="dropdown-conteudo">
+                        <p>1 Pessoa</p>
+                        <p>2 Pessoas</p>
+                        <p>3+ Pessoas</p>
+                    </div>
+                </details>
+                <p class="descricao">Quantas pessoas?</p>
+            </div>
+
+        </div> 
+    </section>
+
+    <section class="conteudo_principal">
+        <article>
+            <h1>Descubra o mundo com a Horizonte</h1>
+            <p>Lorem ipsum dolor sit amet consectetur. Urna vulputate pretium ultrices morbi magna egestas. Leo ornare fringilla convallis suspendisse habitant. Adipiscing arcu quis cras etiam metus enim eget. Semper amet elementum morbi tellus.</p>
+        </article>
+        <img src="../assets/imagem_principal.svg" alt="" class="imagem_principal">
+    </section>
+
+
     </main>
 </body>
+
 </html>
