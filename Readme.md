@@ -27,11 +27,7 @@ Aqui estão os desafios propostos para consolidar o conhecimento de HTML e CSS p
 
 <footer style="background-color: #000714; border-top: 2px solid #0081cc; padding: 24px 16px; margin-top: 64px; text-align: center; font-family: system-ui, -apple-system, sans-serif;">
     <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 8px;">
-        <p style="margin: 0; color: #7d9cc4; font-size: 14px; font-weight: 500; line-height: 1.5;">
-            Desenvolvido por <span style="color: #04a9db; font-weight: 600;">Vinicius Cavalcanti de Freitas</span> — Férias de 2026.
-        </p>
-        <p style="margin: 0; color: #7c889980; font-size: 12px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;">
-             Focado em me tornar um programador front-end profissional e de alto nível!
-        </p>
+        <p style="margin: 0; color: #7d9cc4; font-size: 14px; font-weight: 500; line-height: 1.5;">Desenvolvido por <span style="color: #04a9db; font-weight: 600;">Vinicius Cavalcanti de Freitas</span> — Férias de 2026.</p>
+        <p style="margin: 0; color: #7c889980; font-size: 12px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase;">Focado em me tornar um programador front-end profissional e de alto nível!</p>
     </div>
 </footer>
