@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Evita que padding quebre o tamanho dos elementos */
+}
+
+nav {
+    background-color: #00314C;
+    padding: 20px 40px; /* 20px cima/baixo, 40px nas laterais */
+    display: flex;
+    align-items: center; /* Alinha verticalmente a imagem e os textos no centro */
+    justify-content: space-between; /* Empurra a logo para a esquerda e a .nav_bar para a direita */
+    border-bottom: solid #FFCB3B 2px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+img {
+    height: 25px;
+    display: block;
+}
+
+.nav_bar {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os blocos de botões */
+    gap: 200px; 
+    font-family: 'Poppins', sans-serif;
+    color: #00112b;
+}
+
+.botoes_nav {
+    display: flex;
+    align-items: center; /* Garante que os links fiquem alinhados no meio */
+    gap: 80px; 
+}
+
+.log_cad {
+    display: flex;
+    align-items: center; /* ISSO AQUI vai alinhar o texto do Login com o botão de Cadastro */
+    gap: 50px; 
+    margin-right: 20px;
+}
+
+.cadastro {
+    border: solid 2px #FFCB3B;
+    text-align: center;
+    width: 120px;
+    background-color: transparent;
+    color: #FFCB3B;               
+    padding: 2px;   
+    border-radius: 20px;                   
+    cursor: pointer;               
+    display: inline-block;   
+    transition: 0.2s;              
+}
+
+.cadastro:hover {
+    scale: 1.03;
+    background-color: #FFCB3B;       
+    color: #00112b                
+}
+
+nav a, nav p {
+    text-decoration: none;
+    color: #a6caff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+nav a{
+    transition: 0.2s;
+}
+
+nav a:hover{
+    scale: 1.03;
+    color: #fdfdfd 
+}
