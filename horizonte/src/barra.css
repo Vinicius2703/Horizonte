@@ -1,0 +1,108 @@
+/* 1. IMPORTS NO TOPO ABSOLUTO DO ARQUIVO */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/* Sua barra arredondada igual ao print */
+.barra {
+    margin-top: -450px;
+    background-color: #ffffff;
+    width: 735px;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    border-radius: 50px; 
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.08);
+    font-family: 'Poppins', sans-serif;
+
+    position: relative;        /* Permite que o elemento aceite a camada z-index */
+    z-index: 5;                /* Joga a barra para a camada da frente de tudo */
+    opacity: 1 !important;     /* Força a opacidade a ser 100% caso tenha herdado algo */
+
+    box-shadow: 0px 16px 40px #0003051f;
+    /* 0px  -> Sem desvio para os lados
+       16px -> Empurra a sombra para baixo, dando profundidade
+       40px -> Deixa a sombra super espalhada e suave (sem parecer um risco preto)
+       rgba -> Usa o tom do seu azul escuro com 12% de opacidade */
+}
+
+/* Container de cada opção */
+.item-barra {
+    display: flex;
+    flex-direction: column;
+    gap: 6px; /* Espaço perfeito entre o título e a descrição */
+    position: relative;
+}
+
+/* Oculta a seta padrão do details em todos os navegadores */
+.dropdown summary::-webkit-details-marker {
+    display: none;
+}
+.dropdown summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Espaço entre a palavra DESTINO e a setinha */
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+}
+
+/* Customização da setinha importada via tag img */
+.setinha {
+    width: 12px;  /* Ajuste o tamanho para o que ficar melhor no seu layout */
+    height: auto;
+    transition: transform 0.2s ease; /* Mantém o efeito suave ao girar */
+}
+
+/* Rotaciona a setinha quando o menu estiver aberto */
+.dropdown[open] .setinha {
+    transform: rotate(-90deg); /* Como ela já veio apontando para baixo, girar 180° faz ela apontar para cima perfeitamente */
+}
+
+/* Texto descritivo de baixo */
+.descricao {
+    margin: 0;
+    font-size: 12px;
+    color: #1a1a1a;
+    font-weight: 400;
+}
+
+/* O Menu Flutuante que aparece ao clicar */
+.dropdown-conteudo {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: white;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    padding: 8px; /* Ajustado para dar um respiro melhor em conjunto com o padding interno */
+    border-radius: 16px; /* Bordas ligeiramente menores para harmonizar com o conteúdo */
+    z-index: 10;
+    min-width: 180px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px; /* Garante um espacinho exato entre as pílulas de opções */
+}
+
+/* Itens de texto dentro do menu */
+.dropdown-conteudo p {
+    margin: 0; /* Zerei a margem antiga para o padding controlar o formato do hover */
+    cursor: pointer;
+    font-size: 14px;
+    color: #4a4a4a;
+    font-weight: 500;
+
+    padding: 10px 14px;       /* Espaço interno para o fundo azul não sufocar o texto */
+    border-radius: 40px;      /* Cantos levemente arredondados para a pílula interna ficar elegante */
+    transition: all 0.2s ease;
+    
+}
+
+/* Efeito de passar o mouse */
+.dropdown-conteudo p:hover {
+    background-color: #00314C;
+    color: #fdfdfd;
+    font-weight: 600;
+}

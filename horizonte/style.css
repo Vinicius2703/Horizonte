@@ -1,5 +1,26 @@
 @import url(src/nav.css);
+@import url(src/barra.css);
 
 body{
-    background-color: rgb(160, 211, 255);
+    background-color: #00112b;
+}
+/* Faz o efeito de scroll suave que conversamos */
+html {
+    scroll-behavior: smooth;
+}
+
+.hero {
+    /* Usando '../../' para voltar duas pastas e corrigindo a extensão para .png */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../../assets/background.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
