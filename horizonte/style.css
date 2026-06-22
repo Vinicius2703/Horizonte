@@ -7,13 +7,23 @@ body {
     background-repeat: no-repeat; 
     background-size: cover; 
     background-position: center;
-    background-color: #00112b;
+    background-color: #001520;
     min-height: 100vh;
+    background-attachment: fixed;
 }
 .filtro{
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
     justify-content: center;
+}
+
+.conteudo-azul {
+    /* O degradê começa transparente e vai até o azul escuro sólido (#00112b) */
+    background: linear-gradient(to bottom, #00152000 0%, #001520 60%, #001520 120%);
+    
+    /* Um espaçamento interno no topo para o degradê acontecer suavemente */
+    padding-top: 100px; 
+    width: 100%;
 }
 html {
     scroll-behavior: smooth;
