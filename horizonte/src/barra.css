@@ -140,7 +140,7 @@
     border-radius: 40px;
     color: aliceblue;
     font-weight: 500;
-
+    
     transition: 0.2s;
 }
 
@@ -155,5 +155,32 @@
     font-family: 'poppins',  sans-serif;
     font-weight: 700;
     padding: 8px;
-    width: 100px;
+    width: 170px;
+    
+}
+
+.dropdown .info{
+    font-size: small;
+    color:#00314C;
+}
+
+.conteudo .busca{
+    width: 120px;
+    padding: 8px;
+    background-color: #00314C;
+    border: none;
+    border-radius: 40px;
+    color: aliceblue;
+    font-weight: 500;
+    font-family: 'poppins', sans-serif;
+
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.busca:hover{
+    scale: 1.03;
+    background-color: #004c75; 
+    font-weight:500;      
+    color: aliceblue
 }

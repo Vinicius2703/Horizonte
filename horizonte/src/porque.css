@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.porque {
+
+    background-image: url('../../assets/fundo-porque.png');
+    background-repeat: no-repeat; 
+    background-size: 100% auto; 
+    background-position: center 1%;
+
+    background-color: #001520;
+    display: flex;
+    flex-direction: column; /* Alinha os elementos em coluna (um embaixo do outro) */
+    align-items: center;    /* Centraliza os elementos horizontalmente */
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.subtitulo {
+    background-color: aliceblue;
+    padding: 15px 40px;
+    border-radius: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #001520; /* Adicionado para dar contraste com o fundo aliceblue */
+
+    /* Estado inicial da animação */
+    opacity: 0;
+    transform: scale(0.9) translateY(30px);
+    
+    /* Transição suave */
+    transition: 
+        opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), 
+        transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+
+    box-shadow: 0px 12px 10px #0000005e;
+}
+
+.subtitulo.show {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+
+.txt {
+    font-family: 'Roboto', sans-serif; /* Corrigido para 'Roboto' com R maiúsculo */
+    font-size: 14px; /* Aumentado levemente para melhorar a leitura */
+    line-height: 1.4; /* Um espaçamento de linha 1.1 pode deixar o texto muito espremido */
+    color: #ffffff;  /* Cor branca para contrastar com o fundo escuro #001520 */
+    margin-top: 20px;
+    text-align: center;
+    max-width: 1000px; /* Evita que o texto fique largo demais em telas grandes */
+    width: 60%;
+    align-items: center;
+}
+.txt .t{
+    color: #e6e6e6;;
+    margin-top: 40px;
+    display: block;
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+
+        /* Estado inicial da animação */
+    opacity: 0;
+    transform: scale(0.9) translateY(30px);
+    
+    /* Transição suave */
+    transition: 
+        opacity 1.0s cubic-bezier(0.16, 1, 0.3, 1), 
+        transform 1.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cards.show {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+}
+.cartao{
+    margin-top: 80px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 350px;
+}
+.cartao .imagem-p{
+    height: 140px;
+}
+
+.cartao .t-card{
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10px;
+    font-size: 14px;
+    color: aliceblue;
+}
+
+.cartao .h-3{
+    font-family: 'poppins', sans-serif;
+    font-size: 25px;
+    color: #46BDF7;
+    font-weight: 500;
+    margin-top: 10px;
+
+}

@@ -21,8 +21,8 @@ article h1{
     line-height: 1.1;
 }
 
-article p{
-    color: rgb(196, 196, 196);
+article .texto_principal{
+    color: #e6e6e6;
     width: 450px;
     font-size: 12px;
     font-family: 'roboto', sans-serif;
@@ -41,6 +41,7 @@ article p{
     font-family: 'poppins', sans-serif;
     color: #FFCB3B;
     transition: 0.2s ease-in-out;
+    cursor: pointer;
 }
 .saiba:hover{
     scale: 1.05;
