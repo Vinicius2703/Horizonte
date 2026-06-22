@@ -8,15 +8,21 @@
 
 nav {
     background-color: #00314C;
-    padding: 20px 40px; /* 20px cima/baixo, 40px nas laterais */
+    padding: 20px 40px; 
     display: flex;
-    align-items: center; /* Alinha verticalmente a imagem e os textos no centro */
-    justify-content: space-between; /* Empurra a logo para a esquerda e a .nav_bar para a direita */
+    align-items: center; 
+    justify-content: space-between; 
     border-bottom: solid #FFCB3B 2px;
-
+}
+header{
+        /* COMPORTAMENTO FIXO/STICKY */
     position: sticky;
-    top: 0;
-    z-index: 1000;
+    top: 0; 
+    z-index: 1000; 
+    
+    /* SEGURANÇA: Garante que a barra estique 100% da tela de ponta a ponta */
+    width: 100%; 
+    box-sizing: border-box; /* Impede que o padding de 40px estoure o tamanho da tela */
 }
 
 img {

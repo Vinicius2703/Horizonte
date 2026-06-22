@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 .conteudo_principal{
-    margin-top: 70px;
+    margin-top: 40px;
     color: aliceblue;
     display: flex;
     justify-content: center;
@@ -17,5 +17,5 @@ article h1{
     line-height: 1.1;
 }
 .imagem_principal{
-    height: 500px;
+    height: 450px;
 }
