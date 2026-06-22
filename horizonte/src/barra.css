@@ -4,7 +4,7 @@
 /* A BARRA PRINCIPAL */
 .barra {
     background-color: aliceblue;
-    width: 735px;
+    width: 800px;
     display: flex;
     justify-content: space-between;
     align-items: center; /* Alinha os blocos verticalmente no centro da barra */
@@ -149,4 +149,11 @@
     background-color: #004c75; 
     font-weight:500;      
     color: aliceblue
+}
+
+.conteudo .botao{
+    font-family: 'poppins',  sans-serif;
+    font-weight: 700;
+    padding: 8px;
+    width: 100px;
 }
