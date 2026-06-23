@@ -24,6 +24,7 @@
     font-size: 30px;
     font-weight: 600;
     color: #001520; /* Adicionado para dar contraste com o fundo aliceblue */
+    margin-top: -15px;
 
     /* Estado inicial da animação */
     opacity: 0;
