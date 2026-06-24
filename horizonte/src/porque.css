@@ -13,32 +13,20 @@
     flex-direction: column; /* Alinha os elementos em coluna (um embaixo do outro) */
     align-items: center;    /* Centraliza os elementos horizontalmente */
     justify-content: center;
-    padding: 50px 20px;
+    padding: 50px 20px 350px 20px;
 }
 
-.subtitulo {
-    background-color: aliceblue;
-    padding: 15px 40px;
-    border-radius: 40px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    color: #001520; /* Adicionado para dar contraste com o fundo aliceblue */
-    margin-top: -15px;
-
-    /* Estado inicial da animação */
+.porque .subtitulo {
+    margin-top: 10px;
     opacity: 0;
     transform: scale(0.9) translateY(30px);
-    
-    /* Transição suave */
     transition: 
         opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), 
         transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
-
-    box-shadow: 0px 12px 10px #0000005e;
 }
 
-.subtitulo.show {
+/* Quando o JavaScript adicionar a classe 'show' */
+.porque .subtitulo.show {
     opacity: 1;
     transform: scale(1) translateY(0);
 }
@@ -60,6 +48,7 @@
     display: block;
 }
 .cards{
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     gap: 80px;

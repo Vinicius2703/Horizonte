@@ -2,6 +2,7 @@
 @import url(src/barra.css);
 @import url(src/conteudo_inicio.css);
 @import url(src/porque.css);
+@import url(src/destinos.css);
 
 body {
     background-image: linear-gradient(#00112b00, #00112b46), url('../assets/backgrond.png');
@@ -28,5 +29,20 @@ body {
 }
 html {
     scroll-behavior: smooth;
+}
+
+.subtitulo {
+    background-color: aliceblue;
+    padding: 15px 40px;
+    border-radius: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #001520;
+    box-shadow: 0px 12px 10px #0000005e;
+    
+    /* ADICIONE ESSAS DUAS LINHAS AQUI embaixo: */
+    width: fit-content;  /* Faz o fundo azul claro abraçar apenas o texto */
+    margin: 0 auto;      /* Centraliza o bloco perfeitamente na tela */
 }
 

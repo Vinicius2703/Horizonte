@@ -1,20 +1,25 @@
-const titulo = document.querySelector('.subtitulo');
+// 1. Mudamos para querySelectorAll para capturar TODOS os subtítulos da página
+const titulos = document.querySelectorAll('.subtitulo');
 
 const options = {
-    root: null,         // Usa a tela do navegador como referência
-    rootMargin: '-50px 0px -50px 0px', // Ativa o efeito 50px antes/depois das bordas da tela
-    threshold: 0.05     // Dispara assim que 5% do elemento cruzar a margem
+    root: null,         
+    rootMargin: '-50px 0px -50px 0px', 
+    threshold: 0.05     
 };
 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
+        // CORREÇÃO: Usamos 'entry.target' para aplicar a classe especificamente 
+        // no elemento que acabou de entrar/sair da tela
         if (entry.isIntersecting) {
-            titulo.classList.add('show');
+            entry.target.classList.add('show');
         } else {
-            titulo.classList.remove('show');
+            entry.target.classList.remove('show');
         }
     });
 }, options);
 
-observer.observe(titulo);
-
+// 2. Como 'titulos' agora é uma lista, mandamos o observer assistir cada um deles
+titulos.forEach(titulo => {
+    observer.observe(titulo);
+});
