@@ -1,20 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+/* Aplicando a fonte globalmente para evitar repetições */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .destinos {
-    border: solid #000000;
     margin-top: 0; 
     background-color: #001520;
-    
-
     padding-top: 60px; 
     padding-bottom: 60px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+/* Animação do Subtítulo */
 .destinos .subtitulo {
-
-    margin-top: -50px; 
+    margin-top: -40px; 
     opacity: 0;
     transform: scale(0.9) translateY(30px);
     transition: 
@@ -25,4 +28,143 @@
 .destinos .subtitulo.show {
     opacity: 1;
     transform: scale(1) translateY(0);
+}
+
+/* Container do Carrossel Otimizado */
+.container-carrossel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Garante centralização dos itens internos */
+    width: 90%; /* Ajuste fino: 90% evita que os botões colem na borda do monitor */
+    max-width: 1400px; /* Limita em telas gigantes para o design não quebrar */
+    margin: 60px auto 0px auto;
+    padding: 0 10px;
+    gap: 20px; /* Um gap ligeiramente menor deixa os botões mais próximos do trilho */
+}
+
+/* O Trilho de rolagem */
+.trilho-carrossel {
+    display: flex;
+    gap: 24px; 
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    padding: 20px 0; 
+    width: 100%;
+    flex-wrap: nowrap !important; /* Mantido para garantir segurança total */
+    scrollbar-width: none; 
+}
+
+.trilho-carrossel::-webkit-scrollbar {
+    display: none;
+}
+
+/* O CARTÃO */
+.cartao-destino {
+    flex: 0 0 28%; 
+    flex-shrink: 0; /* Impede o Flexbox de amassar o card quando a tela diminuir */
+    background-color: aliceblue;
+    border-radius: 20px;
+    overflow: hidden; 
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4); /* Suavizada a opacidade da sombra */
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Imagem superior do cartão corrigida */
+.foto-destino {
+    width: 100%;
+    height: 220px; 
+    object-fit: cover; 
+    /* CORREÇÃO: Removido o border-radius invertido para alinhar com o bloco de texto */
+}
+
+/* Bloco de textos abaixo da foto */
+.info-destino {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.linha-titulo, .linha-preco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.linha-titulo .avaliacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.linha-titulo .estrela {
+    height: 16px;
+}
+
+.linha-titulo .subs {
+    font-size: 10px;
+    color: #464646;
+}
+
+.linha-titulo .t-h3 {
+    font-weight: 500; /* Aumentado de 300 para 500 para melhor legibilidade */
+    font-size: 20px;
+    color: #111111;
+    margin: 0;
+}
+
+/* O elemento do país junta o ícone do pino com o texto */
+.linha-preco .pais {
+    display: flex;
+    align-items: center;
+    gap: 6px; 
+    font-weight: 500;
+    font-size: 14px;
+    color: #111111;
+    margin: 0;
+}
+
+.linha-preco .pais img {
+    height: 16px; 
+    width: auto;
+}
+
+/* Preço estilizado como pílula */
+.preco {
+    background-color: #001947; 
+    color: #ffffff;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-weight: 500; /* De 400 para 500 para dar mais destaque ao valor */
+    font-size: 0.95rem;
+}
+
+/* Estilo dos botões laterais */
+.btn-nav {
+    background-color: transparent;
+    border: 3px solid #EFB029;
+    color: #EFB029;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+    z-index: 5;
+    transition: transform 0.2s, background-color 0.2s, color 0.2s, box-shadow 0.2s;
+    flex-shrink: 0;
+    font-weight: 900;
+}
+
+.btn-nav:hover {
+    color: #001520;
+    background-color: #EFB029;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 30px 0px rgba(255,203,59,0.4); /* Otimizado o código da sombra */
 }
