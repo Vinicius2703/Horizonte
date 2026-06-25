@@ -25,8 +25,6 @@ Aqui estão mais informacões sobre o projeto:
 
     - ao lado esquerdo do VsCode você vai procurar por esta opção e pesquisar por "liveServer" e vai instalar no seu VsCode
 
-    <img src='./assets/imagens-readme/infoReadMe.png' style= 'height: 200px'>
-
     <br>
 
     - após isso, no canto inferior direito, aparecerá um botão chamado <strong>"Go Live"</strong>, basta clica-lo que o website será executado em um navegador.
