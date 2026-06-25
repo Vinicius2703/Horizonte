@@ -19,7 +19,7 @@ Aqui estão mais informacões sobre o projeto:
 
 1. Clone este repositório:
    ```bash
-    git clone https://github.com/vinicius2703/horizonte.git
+    git clone https://github.com/vinicius2703/Horizonte.git
 
 2. Execute usando a extensão do vscode (liveServer):
 
