@@ -1,28 +1,34 @@
-![Banner do Vinícius](https://capsule-render.vercel.app/api?type=waving&color=001947&height=200&section=header&text=Imersão%20Front-end&subtitle=Front-end%20Developer%20%26%20UI/UX%20Designer&fontSize=40&animation=fadeIn&fontColor=F4F1DE&subFontColor=E0DBCE)
+![Banner do Vinícius](https://capsule-render.vercel.app/api?type=waving&color=001947&height=200&section=header&text=Horizonte&subtitle=Agencia%20de%20viagens&fontSize=40&animation=fadeIn&fontColor=F4F1DE&subFontColor=E0DBCE)
 
 
-Bem-vindo ao repositório da minha imersão própria em desenvolvimento Front-End! Desenvolvido durante as minhas férias, este espaço é dedicado ao meu aprendizado focado em boas práticas, código limpo e arquitetura profissional moderna.
+O **Horizonte** é uma landing page moderna para uma agência de viagens, desenvolvida do absoluto zero durante as minhas férias de 2026. Este projeto faz parte da minha imersão própria em desenvolvimento Front-End, onde o foco principal é aplicar **HTML5 Semântico**, **Acessibilidade**, **SEO** e arquitetura de código limpo.
 
-O objetivo principal desta jornada é evoluir do absoluto zero (fundamentos) até o nível avançado (frameworks e consumo de APIs), sempre priorizando **HTML Semântico**, **Acessibilidade (a11y)** e **SEO**.
-
----
-
-## Cronograma de Estudos
-
-- [x] **Fase 1:** Fundamentos de HTML5 Semântico e Acessibilidade
-- [/] **Fase 2:** CSS Avançado (Flexbox, CSS Grid, Variáveis e Responsividade)
-- [ ] **Fase 3:** Lógica com JavaScript Moderno (ES6+) e Manipulação de DOM
-- [ ] **Fase 4:** Consumo de APIs Assíncronas (Fetch, Async/Await)
-- [ ] **Fase 5:** Frameworks Modernos (React / Vue / Next.js)
+O design foi totalmente planejado por mim no Figma para garantir uma boa experiência de usuário (UI/UX) e ergonomia visual, sendo posteriormente traduzido em código funcional.
 
 ---
 
-## Projetos em Desenvolvimento
+## Saiba mais sobre o projeto
 
-Aqui estão os desafios propostos para consolidar o conhecimento de HTML e CSS puro:
+Aqui estão mais informacões sobre o projeto:
 
 | Projeto | Descrição | Tecnologias utilizadas | Link |
 | :---: | :--- | :--- | :---: |
-| <img src="assets/horizonte.png" width="200px" alt="Preview Projeto 1"/> | **Agência de viagem - Horizonte**<br><sub>Com o prototipo que fiz no figma, meu proximo passo é desenvolver este protipo em um programa funcional</sub> | `Html` `Css` `Javascript` | [Ver Figma ↗](https://www.figma.com/design/HgWKXxZq5wD8dmG7TsrNWX/primeiro-projeto?node-id=28-163&t=vBznIyE3CHqTpoFd-0) |
+| <img src="assets/imagens-Readme/horizonte.png" width="200px" alt="Preview Projeto 1"/> | **Agência de viagem - Horizonte**<br><sub>Com o prototipo que fiz no figma, meu proximo passo é desenvolver este protipo em um programa funcional</sub> | `Html` `Css` `Javascript` | [Ver Figma ↗](https://www.figma.com/design/HgWKXxZq5wD8dmG7TsrNWX/primeiro-projeto?node-id=28-163&t=vBznIyE3CHqTpoFd-0) |
 
-![Banner do Vinícius](https://capsule-render.vercel.app/api?type=waving&color=001947&height=200&section=footer&text=Feito%20por%20Vinicius%20Cavalcanti%20-%20Férias%202026%0&fontSize=16&animation=fadeIn&fontColor=a6caff&y=50)
+## Como Executar o Projeto Localmente
+
+1. Clone este repositório:
+   ```bash
+    git clone https://github.com/vinicius2703/horizonte.git
+
+2. Execute usando a extensão do vscode (liveServer):
+
+    - ao lado esquerdo do VsCode você vai procurar por esta opção e pesquisar por "liveServer" e vai instalar no seu VsCode
+
+    <img src='./assets/imagens-readme/infoReadMe.png' style= 'height: 200px'>
+
+    <br>
+
+    - após isso, no canto inferior direito, aparecerá um botão chamado <strong>"Go Live"</strong>, basta clica-lo que o website será executado em um navegador.
+
+![Banner do Vinícius](https://capsule-render.vercel.app/api?type=waving&color=001947&height=200&section=footer&text=Feito%20por%20Vinicius%20Cavalcanti%20-%20Férias%202026&fontSize=16&animation=fadeIn&fontColor=a6caff&y=50)
