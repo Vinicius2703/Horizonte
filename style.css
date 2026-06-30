@@ -46,3 +46,19 @@ html {
     margin: 0 auto;      /* Centraliza o bloco perfeitamente na tela */
 }
 
+
+.subtitulo-2 {
+    background-color: aliceblue;
+    padding: 15px 40px;
+    border-radius: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: #001520;
+    box-shadow: 0px 12px 10px #0000005e;
+    
+    /* ADICIONE ESSAS DUAS LINHAS AQUI embaixo: */
+    width: fit-content;  /* Faz o fundo azul claro abraçar apenas o texto */
+    margin: 0 auto;      /* Centraliza o bloco perfeitamente na tela */
+}
+
