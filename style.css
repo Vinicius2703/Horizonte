@@ -4,6 +4,7 @@
 @import url(src/porque.css);
 @import url(src/destinos.css);
 @import url(src/avaliacao.css);
+@import url(src/newsletter.css);
 
 body {
     background-image: linear-gradient(#00112b00, #00112b46), url('../assets/backgrond.png');

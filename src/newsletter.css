@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght=400;500;700;900&display=swap');
+
+/* Container principal da seção */
+.news {
+    background-color: #001520;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* O card da Newsletter */
+.newsletter {
+    padding: 40px 20px;
+    background-color: #00314C;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza todos os elementos filhos na horizontal */
+    gap: 40px;
+    border-radius: 40px;
+}
+
+/* O texto do conteúdo (Título/Chamada) */
+.conteudo-n {
+    color: #EFB029;
+    width: 80%; /* Aumentado um pouco para acomodar melhor o texto */
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center; /* Garante que as linhas de texto fiquem centralizadas */
+}
+
+/* Container do formulário (Input + Botão) */
+.entrada-n {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%; /* Ocupa a largura do card para guiar os filhos */
+}
+
+/* Campo de digitação do E-mail */
+.input-n {
+    padding: 12px 20px; /* Aumentado o padding para dar mais respiro ao digitar */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 40px;
+    width: 100%;
+    max-width: 450px; /* Define um tamanho máximo ideal e confortável */
+    box-sizing: border-box;
+}
+
+/* Botão de Enviar */
+.botao-n {
+    border: solid 2px #EFB029;
+    border-radius: 40px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    width: 100%;
+    max-width: 250px; /* Tamanho proporcional e ideal para o botão */
+    background-color: transparent;
+    color: #EFB029;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: ease-in-out 0.3s;
+}
+
+/* Efeito Hover do Botão */
+.botao-n:hover {
+    transform: scale(1.03); /* Atualizado de 'scale' para 'transform: scale' (boa prática) */
+    background-color: #EFB029;
+    color: #001520;
+    -webkit-box-shadow: 0px 0px 50px 0px rgba(255,203,59,0.2);
+    -moz-box-shadow: 0px 0px 50px 0px rgba(255,203,59,0.2);
+    box-shadow: 0px 0px 50px 0px rgba(255,203,59,0.2);
+}
+
+/* Seção de ícones/parceiros embaixo */
+.icons {
+    padding: 60px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 120px;
+    opacity: 0.8;
+}
+
+/* Imagens dos ícones */
+.img-n {
+    height: 90px;
+}
