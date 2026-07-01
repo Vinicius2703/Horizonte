@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.s-avaliacao{
+    background-color: #001520;
+}
+
+.container-avalia{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 50px;
+}
+
+.conteudo-avalia{
+    width: 50%;
+}
+
+.conteudo-avalia .subtexto{
+    width: 70%;
+    color: aliceblue;
+}
+
+.conteudo-avalia h2{
+    font-size: 48px;
+    color: aliceblue;
+}
+
+.feedback{
+    width: 50%;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 40px;
+    gap: 20px;
+}
+
+.box{
+ display: flex;
+ flex-direction: row;
+ gap: 30px;
+ justify-content: center;
+ align-items: center;
+}
+.avaliador{
+    height: 100px;
+}
+.info-avalia{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Roboto', sans-serif;
+    gap: 20px;
+}
+
+.rating{
+    padding: 4px 15px;
+    width: fit-content;
+    background-color: rgba(0, 12, 34, 0.089);
+    display: flex;
+    flex-direction: row;
+    font-size: 18px;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+    border-radius: 20px;
+}
+
+.rating .estrela{
+    height: 24px;
+}
+
+.local-avalia .pino{
+    height: 20px;
+}
+
+.local-avalia{
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 4px 20px;
+    width: fit-content;
+    background-color: rgba(0, 12, 34, 0.089);
+}
+
+

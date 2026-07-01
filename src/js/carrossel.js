@@ -2,9 +2,9 @@
 // 1. Bancos de Dados (Arrays de Objetos)
 // ==========================================
 const destinosInternacionais = [
-    { nome: "Capadócia", pais: "TURQUIA", imagem: "./assets/carrossel/capadocia.png", avaliacao: "4,8", reviews: "497", preco: "R$ 3.600,00" },
-    { nome: "Vancouver", pais: "CANADÁ", imagem: "./assets/carrossel/vancouver.png", avaliacao: "4,7", reviews: "452", preco: "R$ 3.650,00" },
-    { nome: "Paris", pais: "FRANÇA", imagem: "./assets/carrossel/paris.png", avaliacao: "4,2", reviews: "932", preco: "R$ 3.420,00" },
+    { nome: "Capadócia", pais: "Turquia", imagem: "./assets/carrossel/capadocia.png", avaliacao: "4,8", reviews: "497", preco: "R$ 3.600,00" },
+    { nome: "Vancouver", pais: "Canadá", imagem: "./assets/carrossel/vancouver.png", avaliacao: "4,7", reviews: "452", preco: "R$ 3.650,00" },
+    { nome: "Paris", pais: "França", imagem: "./assets/carrossel/paris.png", avaliacao: "4,2", reviews: "932", preco: "R$ 3.420,00" },
     { nome: "California", pais: "EUA", imagem: "./assets/carrossel/california.png", avaliacao: "4,5", reviews: "612", preco: "R$ 3.420,00" },
     { nome: "Seoul", pais: "Coreia do sul", imagem: "./assets/carrossel/seoul.png", avaliacao: "4,8", reviews: "612", preco: "R$ 3.420,00" }
 ];
